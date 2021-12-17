@@ -167,3 +167,8 @@ a:hover, a:focus {
     .card[data-color="purple"] .category {
         color: #5a283d;
     }
+.buttons {
+    margin: auto;
+    width: 60%;
+    
+}
