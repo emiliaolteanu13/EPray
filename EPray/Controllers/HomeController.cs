@@ -1,4 +1,6 @@
-﻿using EPray.Models;
+﻿using EPray.EntityFramework;
+using EPray.Models;
+using EPray.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -12,15 +14,25 @@ namespace EPray.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly PrayerContext _context;
+        public PrayerService prayerService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(PrayerContext context,ILogger<HomeController> logger)
         {
+            _context = context;
             _logger = logger;
+            prayerService = new PrayerService(context);
         }
 
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult GetPrayers(ReligionType religion)
+        {
+            var prayersByReligion = prayerService.GetPrayersByReligion(religion, _context);
+            return View(prayersByReligion);
         }
 
         public IActionResult Privacy()

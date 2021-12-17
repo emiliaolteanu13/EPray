@@ -1,0 +1,33 @@
+﻿@model IEnumerable<EPray.Models.PrayerModel>
+
+@{
+    ViewData["Title"] = "GetPrayers";
+}
+
+<h1>Christian Prayers</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Lyrics)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reason)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lyrics.ToString().Substring(0,16))
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Reason)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -9,8 +9,15 @@ namespace EPray.Services
 {
     public  class PrayerService
     {
+        private PrayerContext _context;
+        public PrayerService()
+        {
 
-        
+        }
+        public PrayerService(PrayerContext context)
+        {
+            _context = context;
+        }
 
         public IEnumerable<PrayerModel> PopulatePrayerDB()
         {
@@ -78,6 +85,12 @@ namespace EPray.Services
             //prayer3.Reason = PrayerReasonType.GENERAL;
             //prayer3.Religion = ReligionType.MUSLIM;
             //context.Prayers.Add(prayer1);
+        }
+
+        public IEnumerable<PrayerModel> GetPrayersByReligion(ReligionType religion, PrayerContext context)
+        {
+            var prayers = from prayer in context.Prayers where prayer.Religion == religion select prayer;
+            return prayers;
         }
     }
 }
