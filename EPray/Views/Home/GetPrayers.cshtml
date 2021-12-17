@@ -22,7 +22,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Lyrics.ToString().Substring(0,16))
+                @item.Lyrics.Substring(0,16) ....
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Reason)
