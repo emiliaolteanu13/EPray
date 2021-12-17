@@ -160,15 +160,19 @@ a:hover, a:focus {
     background: #baa9ba;
 }
 
-    .card[data-color="purple"] .description {
-        color: #3a283d;
-    }
+.card[data-color="purple"] .description {
+    color: #3a283d;
+}
 
-    .card[data-color="purple"] .category {
-        color: #5a283d;
-    }
+.card[data-color="purple"] .category {
+    color: #5a283d;
+}
 .buttons {
     margin: auto;
     width: 60%;
     
+}
+.target-email{
+    display:inline-block;
+    visibility:hidden
 }
