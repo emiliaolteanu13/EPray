@@ -2,3 +2,8 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+var msg = new SpeechSynthesisUtterance();
+
+var message = document.getElementById("prayer").innerHTML
+msg.text = message
+window.speechSynthesis.speak(msg);
