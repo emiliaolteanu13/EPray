@@ -1,4 +1,5 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿var msg = new SpeechSynthesisUtterance();
 
-// Write your JavaScript code.
+var message = document.getElementById("prayer").innerHTML
+msg.text = message
+window.speechSynthesis.speak(msg);
