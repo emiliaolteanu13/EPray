@@ -1,4 +1,6 @@
+using EPray.EntityFramework;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -13,6 +15,9 @@ namespace EPray
     {
         public static void Main(string[] args)
         {
+            var options = new DbContextOptionsBuilder<PrayerContext>().UseSqlServer("Server=DESKTOP-MS9HR0B;Initial Catalog=EPray;Integrated Security=true;").Options;
+            using var db = new PrayerContext(options);
+            db.Database.EnsureCreated();
             CreateHostBuilder(args).Build().Run();
         }
 
