@@ -76,3 +76,5 @@ C:\Users\HP\Documents\EPray\EPray\obj\Debug\netcoreapp3.1\EPray.csproj.CopyCompl
 C:\Users\HP\Documents\EPray\EPray\obj\Debug\netcoreapp3.1\EPray.dll
 C:\Users\HP\Documents\EPray\EPray\obj\Debug\netcoreapp3.1\EPray.pdb
 C:\Users\HP\Documents\EPray\EPray\obj\Debug\netcoreapp3.1\EPray.genruntimeconfig.cache
+C:\Users\HP\Documents\EPray\EPray\obj\Debug\netcoreapp3.1\Razor\Views\User\Register.cshtml.g.cs
+C:\Users\HP\Documents\EPray\EPray\obj\Debug\netcoreapp3.1\Razor\Views\User\Signin.cshtml.g.cs
