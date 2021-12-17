@@ -76,15 +76,45 @@ namespace EPray.Services
                     Lyrics = "Lord Jesus Christ, I confess here and now that you are my Creator (John 1:3) and therefore the creator of my sexuality. I confess that you are also my Savior, that you have ransomed me with your blood (1 Corinthians 15:3, Matthew 20:28). I have been bought with the blood of Jesus Christ; my life and my body belong to God (1 Corinthians 6:19–20). Jesus, I present myself to you now to be made whole and holy in every way, including in my sexuality. You ask us to present our bodies to you as living sacrifices (Romans 12:1) and the parts of our bodies as instruments of righteousness (Romans 6:13). I do this now. I present my body, my sexuality and I present my sexual nature to you. I consecrate my sexuality to Jesus Christ.",
                     Reason = PrayerReasonType.POTENCY,
                     Religion = ReligionType.CHRISTIAN
-                }
+                },
+
+                new PrayerModel
+                {
+                    Lyrics = "Give them the courage and strength to fight another day and grant us the grace to use our pain to reach out with help and support. Dear Lord, we ask with all or our heart, please touch these special lives. Bless them with courage and hope, may all find solace in your loving embrace. Heal them in body, mind, and spirit.",
+                    Reason = PrayerReasonType.CANCER,
+                    Religion = ReligionType.MUSLIM
+                },
+
+                new PrayerModel
+                {
+                    Lyrics = "O Lord of the people, remove this pain and cure it, You are the one who cures and there is no one besides You who can cure, grant such a cure that no illness remains",
+                    Reason = PrayerReasonType.POTENCY,
+                    Religion = ReligionType.MUSLIM
+                },
+
+                new PrayerModel
+                {
+                    Lyrics = "If we are peaceful, If we are happy, We can smile and blossom like a flower. And everyone in our family, Our entire society, Will benefit From our peace.",
+                    Reason = PrayerReasonType.GENERAL,
+                    Religion = ReligionType.BUDIST
+                },
+
+                new PrayerModel
+                {
+                    Lyrics = "Enlightenment is like the moon reflected on the water. The moon does not get wet, nor is the water broken. Although its light is wide and great, The moon is reflected even in a puddle an inch wide. The whole moon and the entire sky Are reflected in one dewdrop on the grass.",
+                    Reason = PrayerReasonType.GENERAL,
+                    Religion = ReligionType.BUDIST
+                },
+
+                new PrayerModel
+                {
+                    Lyrics = "Glory be to the father and to the maker of creation. As it was, in the beginning, is now and ever shall be World without end.",
+                    Reason = PrayerReasonType.GENERAL,
+                    Religion = ReligionType.RASTAFARI
+                },
             };
             return prayers;
-            //var prayer = new PrayerModel();
-            //prayer3.Id = 1;
-            //prayer3.Lyrics = "Some of the companions of the Prophet (ﷺ) came across a tribe amongst the tribes of the Arabs, and that tribe did not entertain them.\n While they were in that state, the chief of that tribe was bitten by a snake (or stung by a scorpion).\n They said, (to the companions of the Prophet (ﷺ) ), 'Have you got any medicine with you or anybody who can treat with Ruqya?'\n The Prophet's companions said, 'You refuse to entertain us, so we will not treat(your chief) unless you pay us for it.' So they agreed to pay them a flock of sheep. One of them (the Prophet's companions)\n started reciting Surat-al-Fatiha and gathering his saliva and spitting it (at the snake-bite).\n The patient got cured and his people presented the sheep to them, but they said, 'We will not take it unless we ask the Prophet(whether it is lawful).' \n When they asked him, he smiled and said, 'How do you know that Surat - al - Fatiha is a Ruqya ? Take it(flock of sheep) and assign a share for me.";
-            //prayer3.Reason = PrayerReasonType.GENERAL;
-            //prayer3.Religion = ReligionType.MUSLIM;
-            //context.Prayers.Add(prayer1);
+            
         }
 
         public IEnumerable<PrayerModel> GetPrayersByReligion(ReligionType religion, PrayerContext context)
