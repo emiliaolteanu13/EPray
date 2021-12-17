@@ -21,7 +21,7 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td data-lyrics="">
+            <td data-lyrics="@item.Lyrics" class="lyrics">
                 @item.Lyrics.Substring(0,16) ....
             </td>
             <td>
@@ -31,3 +31,6 @@
 }
     </tbody>
 </table>
+@section Scripts{ 
+<script src="~/js/showFullPrayer.js"></script>
+}
