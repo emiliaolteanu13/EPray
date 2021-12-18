@@ -5,7 +5,6 @@
     console.log(ev.target);
     ev.target.innerText = lyrics;
     var msg = new SpeechSynthesisUtterance();
-
     msg.text = lyrics
     window.speechSynthesis.speak(msg);
 }

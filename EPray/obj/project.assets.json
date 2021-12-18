@@ -8440,19 +8440,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zucke\\.nuget\\packages\\": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zucke\\Documents\\Advanced\\EPray\\EPray\\EPray.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Advanced\\EPray\\EPray\\EPray.csproj",
       "projectName": "EPray",
-      "projectPath": "C:\\Users\\zucke\\Documents\\Advanced\\EPray\\EPray\\EPray.csproj",
-      "packagesPath": "C:\\Users\\zucke\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zucke\\Documents\\Advanced\\EPray\\EPray\\obj\\",
+      "projectPath": "C:\\Users\\ASUS\\Desktop\\Advanced\\EPray\\EPray\\EPray.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ASUS\\Desktop\\Advanced\\EPray\\EPray\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\zucke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8519,7 +8519,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }
