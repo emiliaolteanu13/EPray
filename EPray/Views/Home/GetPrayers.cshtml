@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<EPray.Models.PrayerModel>
+@using EPray.Services
 
 @{
     ViewData["Title"] = "GetPrayers";
@@ -30,9 +31,13 @@
             <td>
                 <a class="btn btn-danger" name="target">target</a>
                 <div class="target-email" >
-                    <textarea class="email" rows="1"></textarea>
-                    <input type="submit" value="submit" />
+                    <form asp-area="" asp-controller="Home" asp-action="GetPrayers" method="post">
+                        <input type="text" class="email" rows="1" name="recieverEmail" />
+                        <input type="submit" value="submit"  />
+                    </form>
+                    
                 </div>
+              
                 
             </td>
         </tr>
