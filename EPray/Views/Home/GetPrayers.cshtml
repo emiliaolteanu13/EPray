@@ -30,8 +30,11 @@
             <td>
                 <a class="btn btn-danger" name="target">target</a>
                 <div class="target-email" >
-                    <input type="text" class="email"/>
-                    <input type="submit" value="submit" />
+                    <form asp-area="" asp-controller="Home" asp-action="GetPrayers" method="post">
+                        <input type="text" class="email" rows="1" name="recieverEmail" />
+                        <input type="submit" value="submit"  />
+                    </form>
+                    
                 </div>
                 
             </td>

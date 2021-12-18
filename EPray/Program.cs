@@ -16,8 +16,8 @@ namespace EPray
     {
         public static void Main(string[] args)
         {
-            //var prayerService = new PrayerService();
-            var options = new DbContextOptionsBuilder<PrayerContext>().UseSqlServer("Server=DESKTOP-MS9HR0B; Initial Catalog=EPray;Integrated Security=true;").Options;
+            var prayerService = new PrayerService();
+            var options = new DbContextOptionsBuilder<PrayerContext>().UseSqlServer("Server=DESKTOP-KI3RFNG; Initial Catalog=EPray;Integrated Security=true;").Options;
             using var db = new PrayerContext(options);
             //db.Database.EnsureDeleted();
             db.Database.EnsureCreated();
