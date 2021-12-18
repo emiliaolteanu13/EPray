@@ -1,6 +1,7 @@
 ﻿using EPray.EntityFramework;
 using EPray.Models;
 using EPray.Services;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -29,11 +30,18 @@ namespace EPray.Controllers
             return View();
         }
         
-
-        
-        public IActionResult GetPrayers(ReligionType religion)
+        [HttpGet]
+        public IActionResult GetPrayers(string id)
         {
-            var prayersByReligion = prayerService.GetPrayersByReligion(religion);
+            var prayersByReligion = prayerService.GetPrayersByReligion(Int32.Parse(id), _context);
+            return View(prayersByReligion);
+        }
+
+        [HttpPost]
+        public IActionResult GetPrayers(string recieverEmail, string id)
+        {
+            EmailSender.Execute(recieverEmail);
+            var prayersByReligion = prayerService.GetPrayersByReligion(Int32.Parse(id), _context);
             return View(prayersByReligion);
         }
 

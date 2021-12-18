@@ -29,14 +29,25 @@
             <td>
                 <a class="btn btn-danger" name="target">target</a>
                 <div class="target-email" >
-                    <textarea class="email" rows="1"></textarea>
-                    <input type="submit" value="submit" />
+                    <form asp-area="" asp-controller="Home" asp-action="GetPrayers" method="post">
+                        <input type="text" class="email" rows="1" name="recieverEmail" />
+                        <input type="submit" value="submit"  />
+                    </form>
+                    
                 </div>
                 
             </td>
         </tr>
 }
     </tbody>
+    <tr>
+        <td>
+            @if (Model.ToList()[0].Religion == ReligionType.CHRISTIAN)
+            {
+                <a href="http://www.radiotrinitas.ro/live/" target="_blank"><img src="~/Logo-2018-radio-trinitas.png">Christian Radio Click here</a>
+            }
+        </td>
+    </tr>
 </table>
 @section Scripts{ 
 <script src="~/js/showFullPrayer.js"></script>

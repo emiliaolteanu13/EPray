@@ -13,25 +13,30 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "C:\Users\ASUS\Desktop\Advanced\EPray\EPray\Views\_ViewImports.cshtml"
+#line 1 "C:\Users\zucke\Documents\Advanced\EPray\EPray\Views\_ViewImports.cshtml"
 using EPray;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\ASUS\Desktop\Advanced\EPray\EPray\Views\_ViewImports.cshtml"
+#line 2 "C:\Users\zucke\Documents\Advanced\EPray\EPray\Views\_ViewImports.cshtml"
 using EPray.Models;
 
 #line default
 #line hidden
 #nullable disable
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e649232fcb6e457485484d59b51c9c60f3ba2277", @"/Views/Home/GetPrayers.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"18083fc7fa88f7c8560aa154f35afe597f333453", @"/Views/Home/GetPrayers.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7c742fb1c15d4066fcd64deb56e2c2b571be95bf", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_GetPrayers : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<EPray.Models.PrayerModel>>
     {
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/showFullPrayer.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/displayTextArea.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-area", "", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Home", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_2 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "GetPrayers", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_3 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("method", "post", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_4 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/Logo-2018-radio-trinitas.png"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_5 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/showFullPrayer.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_6 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/displayTextArea.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         #line hidden
         #pragma warning disable 0649
         private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext __tagHelperExecutionContext;
@@ -52,13 +57,15 @@ using EPray.Models;
                 return __backed__tagHelperScopeManager;
             }
         }
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\r\n");
 #nullable restore
-#line 3 "C:\Users\ASUS\Desktop\Advanced\EPray\EPray\Views\Home\GetPrayers.cshtml"
+#line 3 "C:\Users\zucke\Documents\Advanced\EPray\EPray\Views\Home\GetPrayers.cshtml"
   
     ViewData["Title"] = "GetPrayers";
 
@@ -68,7 +75,7 @@ using EPray.Models;
             WriteLiteral("\r\n<h1>");
             WriteLiteral("</h1>\r\n<table class=\"table\">\r\n    <thead>\r\n        <tr>\r\n            <th>\r\n                ");
 #nullable restore
-#line 12 "C:\Users\ASUS\Desktop\Advanced\EPray\EPray\Views\Home\GetPrayers.cshtml"
+#line 13 "C:\Users\ASUS\Desktop\Advanced\EPray\EPray\Views\Home\GetPrayers.cshtml"
            Write(Html.DisplayNameFor(model => model.Lyrics));
 
 #line default
@@ -76,7 +83,7 @@ using EPray.Models;
 #nullable disable
             WriteLiteral("\r\n            </th>\r\n            <th>\r\n                ");
 #nullable restore
-#line 15 "C:\Users\ASUS\Desktop\Advanced\EPray\EPray\Views\Home\GetPrayers.cshtml"
+#line 16 "C:\Users\ASUS\Desktop\Advanced\EPray\EPray\Views\Home\GetPrayers.cshtml"
            Write(Html.DisplayNameFor(model => model.Reason));
 
 #line default
@@ -84,7 +91,7 @@ using EPray.Models;
 #nullable disable
             WriteLiteral("\r\n            </th>\r\n            <th></th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n");
 #nullable restore
-#line 21 "C:\Users\ASUS\Desktop\Advanced\EPray\EPray\Views\Home\GetPrayers.cshtml"
+#line 22 "C:\Users\ASUS\Desktop\Advanced\EPray\EPray\Views\Home\GetPrayers.cshtml"
  foreach (var item in Model) {
 
 #line default
@@ -92,7 +99,7 @@ using EPray.Models;
 #nullable disable
             WriteLiteral("        <tr>\r\n            <td data-lyrics=\"");
 #nullable restore
-#line 23 "C:\Users\ASUS\Desktop\Advanced\EPray\EPray\Views\Home\GetPrayers.cshtml"
+#line 24 "C:\Users\ASUS\Desktop\Advanced\EPray\EPray\Views\Home\GetPrayers.cshtml"
                         Write(item.Lyrics);
 
 #line default
@@ -100,7 +107,7 @@ using EPray.Models;
 #nullable disable
             WriteLiteral("\" class=\"lyrics\">\r\n                ");
 #nullable restore
-#line 24 "C:\Users\ASUS\Desktop\Advanced\EPray\EPray\Views\Home\GetPrayers.cshtml"
+#line 25 "C:\Users\ASUS\Desktop\Advanced\EPray\EPray\Views\Home\GetPrayers.cshtml"
            Write(item.Lyrics.Substring(0,16));
 
 #line default
@@ -108,7 +115,7 @@ using EPray.Models;
 #nullable disable
             WriteLiteral(" ....\r\n            </td>\r\n            <td>\r\n                ");
 #nullable restore
-#line 27 "C:\Users\ASUS\Desktop\Advanced\EPray\EPray\Views\Home\GetPrayers.cshtml"
+#line 28 "C:\Users\ASUS\Desktop\Advanced\EPray\EPray\Views\Home\GetPrayers.cshtml"
            Write(Html.DisplayFor(modelItem => item.Reason));
 
 #line default
@@ -116,7 +123,7 @@ using EPray.Models;
 #nullable disable
             WriteLiteral(@"
             </td>
-            <td>
+            <td class""emailButton"">
                 <a class=""btn btn-danger"" name=""target"">target</a>
                 <div class=""target-email"" >
                     <textarea class=""email"" rows=""1""></textarea>
@@ -127,21 +134,21 @@ using EPray.Models;
         </tr>
 ");
 #nullable restore
-#line 38 "C:\Users\ASUS\Desktop\Advanced\EPray\EPray\Views\Home\GetPrayers.cshtml"
+#line 39 "C:\Users\ASUS\Desktop\Advanced\EPray\EPray\Views\Home\GetPrayers.cshtml"
 }
 
 #line default
 #line hidden
 #nullable disable
-            WriteLiteral("    </tbody>\r\n</table>\r\n");
+            WriteLiteral("        </td>\r\n    </tr>\r\n</table>\r\n");
             DefineSection("Scripts", async() => {
                 WriteLiteral(" \r\n");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e649232fcb6e457485484d59b51c9c60f3ba22776595", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18083fc7fa88f7c8560aa154f35afe597f3334536620", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
                 __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_5);
                 await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
                 if (!__tagHelperExecutionContext.Output.IsContentModified)
                 {
@@ -150,12 +157,12 @@ using EPray.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e649232fcb6e457485484d59b51c9c60f3ba22777690", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18083fc7fa88f7c8560aa154f35afe597f3334537715", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
                 __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
+                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_6);
                 await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
                 if (!__tagHelperExecutionContext.Output.IsContentModified)
                 {
