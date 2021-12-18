@@ -170,9 +170,12 @@ a:hover, a:focus {
 .buttons {
     margin: auto;
     width: 60%;
+    color: white;
+    margin-right: auto;
     
 }
 .target-email{
     display:inline-block;
     visibility:hidden
 }
+

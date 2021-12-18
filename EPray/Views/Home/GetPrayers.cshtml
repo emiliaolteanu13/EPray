@@ -28,9 +28,9 @@
                 @Html.DisplayFor(modelItem => item.Reason)
             </td>
             <td>
-                <a class="btn btn-danger">target</a>
+                <a class="btn btn-danger" name="target">target</a>
                 <div class="target-email" >
-                    <textarea rows="1"></textarea>
+                    <input type="text" class="email"/>
                     <input type="submit" value="submit" />
                 </div>
                 
@@ -41,4 +41,5 @@
 </table>
 @section Scripts{ 
 <script src="~/js/showFullPrayer.js"></script>
+<script src="~/js/displayTextArea.js"></script>
 }

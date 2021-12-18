@@ -5,8 +5,7 @@
     console.log(ev.target);
     ev.target.innerText = lyrics 
     var msg = new SpeechSynthesisUtterance();
-
-    msg.text = lyrics+ "ehehhheheehehehehehhehehehuehueheuheuhueueeuhuehue o ho hooooo my belly hurts hahahaihaihihahahahis";
+    msg.text = lyrics
     window.speechSynthesis.speak(msg);
 }
 document.querySelectorAll(".lyrics").forEach(item => {
