@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zucke\\Documents\\Advanced\\EPray\\EPray\\EPray.csproj": {}
+    "C:\\Users\\HP\\Documents\\EPray\\EPray\\EPray.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zucke\\Documents\\Advanced\\EPray\\EPray\\EPray.csproj": {
+    "C:\\Users\\HP\\Documents\\EPray\\EPray\\EPray.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zucke\\Documents\\Advanced\\EPray\\EPray\\EPray.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\EPray\\EPray\\EPray.csproj",
         "projectName": "EPray",
-        "projectPath": "C:\\Users\\zucke\\Documents\\Advanced\\EPray\\EPray\\EPray.csproj",
-        "packagesPath": "C:\\Users\\zucke\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zucke\\Documents\\Advanced\\EPray\\EPray\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Documents\\EPray\\EPray\\EPray.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\EPray\\EPray\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\zucke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
