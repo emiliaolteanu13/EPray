@@ -459,3 +459,4 @@ C:\Users\zucke\Documents\Advanced\EPray\EPray\bin\Debug\netcoreapp3.1\zh-Hant\Mi
 C:\Users\zucke\Documents\Advanced\EPray\EPray\obj\Debug\netcoreapp3.1\Razor\Views\Home\GetPrayers.cshtml.g.cs
 C:\Users\zucke\Documents\Advanced\EPray\EPray\bin\Debug\netcoreapp3.1\SendGrid.dll
 C:\Users\zucke\Documents\Advanced\EPray\EPray\bin\Debug\netcoreapp3.1\StarkbankEcdsa.dll
+C:\Users\zucke\Documents\Advanced\EPray\EPray\obj\Debug\netcoreapp3.1\Razor\Views\Home\Donations.cshtml.g.cs
