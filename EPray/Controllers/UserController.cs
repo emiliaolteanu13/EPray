@@ -30,12 +30,12 @@ namespace EPray.Controllers
         [HttpPost]
         public ActionResult Register(RegistrationModel registerDetails)
         {
-
+            
             if (ModelState.IsValid)
             {
                 var user = new UserModel();
                 user.Email = registerDetails.Email;
-                user.Password = registerDetails.Password;
+                user.Password = UserService.HashPassword(registerDetails.Password);
                 _context.Users.Add(user);
                 _context.SaveChanges();
                 ViewBag.Message = "User Details Saved";
