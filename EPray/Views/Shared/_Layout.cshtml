@@ -27,19 +27,19 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><h3>Home</h3></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy"><h3>Privacy</h3></a>
                         </li>
                         @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
                         @{ if (HttpContextAccessor.HttpContext.Request.Cookies["userId"] == null)
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Register">Register</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Register"><h3>Register</h3></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Signin">Sign in</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Signin"><h3>Sign in</h3></a>
                                 </li>
                             }
                         }
@@ -49,7 +49,7 @@
                                 if (HttpContextAccessor.HttpContext.Request.Cookies["userName"] != null)
                                 {
                                     <li class="nav-item" id="user-id" data-user-id="@HttpContextAccessor.HttpContext.Request.Cookies["userId"]">
-                                        Hello @HttpContextAccessor.HttpContext.Request.Cookies["userName"]
+                                        <a class="nav-link text-dark"><h3>Hello @HttpContextAccessor.HttpContext.Request.Cookies["userName"].Substring(0, @HttpContextAccessor.HttpContext.Request.Cookies["userName"].IndexOf('@'))</h3></a> 
                                     </li>
                                 }
                                 else
@@ -59,7 +59,7 @@
                                     </li>
                                 }
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Logout">Log out</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Logout"><h3>Log out</h3></a>
                                 </li>
                             }
 

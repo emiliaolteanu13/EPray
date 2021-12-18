@@ -117,10 +117,13 @@ namespace EPray.Services
             
         }
 
-        public IEnumerable<PrayerModel> GetPrayersByReligion(ReligionType religion, PrayerContext context)
+        public IEnumerable<PrayerModel> GetPrayersByReligion(ReligionType religion)
         {
-            var prayers = from prayer in context.Prayers where prayer.Religion == religion select prayer;
-            return prayers;
+           
+                var prayers = from prayer in _context.Prayers where prayer.Religion == religion select prayer;
+                return prayers;
+          
+            
         }
     }
 }

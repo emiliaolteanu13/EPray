@@ -28,10 +28,12 @@ namespace EPray.Controllers
         {
             return View();
         }
+        
 
+        
         public IActionResult GetPrayers(ReligionType religion)
         {
-            var prayersByReligion = prayerService.GetPrayersByReligion(religion, _context);
+            var prayersByReligion = prayerService.GetPrayersByReligion(religion);
             return View(prayersByReligion);
         }
 
