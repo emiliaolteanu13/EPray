@@ -38,6 +38,14 @@
         </tr>
 }
     </tbody>
+    <tr>
+        <td>
+            @if (Model.ToList()[0].Religion == ReligionType.CHRISTIAN)
+            {
+                <a href="http://www.radiotrinitas.ro/live/" target="_blank"><img src="~/Logo-2018-radio-trinitas.png">Christian Radio Click here</a>
+            }
+        </td>
+    </tr>
 </table>
 @section Scripts{ 
 <script src="~/js/showFullPrayer.js"></script>

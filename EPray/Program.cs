@@ -16,14 +16,14 @@ namespace EPray
     {
         public static void Main(string[] args)
         {
-            var prayerService = new PrayerService();
+            //var prayerService = new PrayerService();
             var options = new DbContextOptionsBuilder<PrayerContext>().UseSqlServer("Server=DESKTOP-MS9HR0B; Initial Catalog=EPray;Integrated Security=true;").Options;
             using var db = new PrayerContext(options);
-            db.Database.EnsureDeleted();
+            //db.Database.EnsureDeleted();
             db.Database.EnsureCreated();
-            var prayers = prayerService.PopulatePrayerDB();
-            db.Prayers.AddRange(prayers);
-            db.SaveChanges();
+            //var prayers = prayerService.PopulatePrayerDB();
+            //db.Prayers.AddRange(prayers);
+            //db.SaveChanges();
             CreateHostBuilder(args).Build().Run();
         }
 
