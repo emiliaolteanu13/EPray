@@ -3,7 +3,7 @@
     let lyrics = ev.target.dataset.lyrics;
     console.log(lyrics);
     console.log(ev.target);
-    ev.target.innerText = lyrics;
+    ev.target.innerText = lyrics 
     var msg = new SpeechSynthesisUtterance();
     msg.text = lyrics
     window.speechSynthesis.speak(msg);
