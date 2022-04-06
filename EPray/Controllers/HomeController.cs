@@ -16,13 +16,15 @@ namespace EPray.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly PrayerContext _context;
+        private EmailSender _emailSender;
         public PrayerService prayerService;
 
-        public HomeController(PrayerContext context,ILogger<HomeController> logger)
+        public HomeController(PrayerContext context,ILogger<HomeController> logger, EmailSender emailSender)
         {
             _context = context;
             _logger = logger;
             prayerService = new PrayerService(context);
+            _emailSender = emailSender;
         }
 
         public IActionResult Index()
@@ -38,9 +40,9 @@ namespace EPray.Controllers
         }
 
         [HttpPost]
-        public IActionResult GetPrayers(string recieverEmail, string id)
+        public async Task<IActionResult> GetPrayers(string recieverEmail, string id)
         {
-            EmailSender.Execute(recieverEmail);
+            await _emailSender.Execute(recieverEmail);
             var prayersByReligion = prayerService.GetPrayersByReligion(Int32.Parse(id), _context);
             return View(prayersByReligion);
         }

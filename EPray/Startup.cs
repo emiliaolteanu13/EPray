@@ -1,4 +1,5 @@
 using EPray.EntityFramework;
+using EPray.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -15,6 +16,7 @@ namespace EPray
 {
     public class Startup
     {
+        private string _emailApiKey = null;
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -25,6 +27,9 @@ namespace EPray
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            _emailApiKey = Configuration["EmailApiKey"];
+            services.AddSingleton(x =>
+                new EmailSender(_emailApiKey));
             services.AddHttpContextAccessor();
             services.AddDbContext<PrayerContext>(options => options.UseSqlServer(Configuration.GetConnectionString("EPray:SQLServer")));
 
